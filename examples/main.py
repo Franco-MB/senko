@@ -1,3 +1,1 @@
-
-
-print("eeeeeeeeeeeeee")
+print("o")
