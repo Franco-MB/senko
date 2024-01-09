@@ -2,9 +2,11 @@ from machine import Pin
 import time
 import senko
 
+OTA = senko.Senko(user="Franco-MB", repo="senko", working_dir="examples", files=["main.py"])
 
 # Verifique se a versão mais recente está disponível
 def version():
+  global OTA
   if OTA.fetch():
     print("Nova versão disponível")
     machine.reset()
@@ -23,3 +25,4 @@ while(True):
   time.sleep_ms(100)
 
   version()
+
