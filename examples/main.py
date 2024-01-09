@@ -7,8 +7,8 @@ while(True):
 
   led.on()
   print('Led OFF')
-  time.sleep_ms(500)
+  time.sleep_ms(100)
 
   led.off()
   print('Led ON')
-  time.sleep_ms(500)
+  time.sleep_ms(100)
