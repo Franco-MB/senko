@@ -19,10 +19,10 @@ while(True):
 
   led.on()
   print('Led OFF')
-  time.sleep_ms(100)
+  time.sleep_ms(1000)
 
   led.off()
   print('Led ON')
-  time.sleep_ms(100)
+  time.sleep_ms(1000)
 
   version()
