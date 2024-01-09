@@ -4,7 +4,7 @@ import senko
 
 OTA = senko.Senko(user="Franco-MB", repo="senko", working_dir="examples", files=["main.py"])
 
-led = machine.Pin(2, Pin.OUT)
+led = Pin(2, Pin.OUT)
 
 while(True):
 
