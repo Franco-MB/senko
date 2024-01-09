@@ -1,3 +1,3 @@
 """Your main code goes here!"""
 
-print("Accept the pamper")
+print("1")
