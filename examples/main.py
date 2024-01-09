@@ -10,11 +10,11 @@ while(True):
 
   led.on()
   print('Led OFF')
-  time.sleep_ms(1000)
+  time.sleep_ms(2000)
 
   led.off()
   print('Led ON')
-  time.sleep_ms(1000)
+  time.sleep_ms(2000)
 
   # Verifique se a versão mais recente está disponível
   if OTA.fetch():
