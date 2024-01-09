@@ -15,8 +15,9 @@ while(True):
   led.off()
   print('Led ON')
   time.sleep_ms(5000)
-
+  '''
   # Verifique se a versão mais recente está disponível
   if OTA.fetch():
     print("Nova versão disponível")
     machine.reset()
+  '''
