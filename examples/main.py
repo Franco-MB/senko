@@ -1,6 +1,7 @@
 from machine import Pin
 import time
 import senko
+import gc
 
 OTA = senko.Senko(user="Franco-MB", repo="senko", working_dir="examples", files=["main.py"])
 
@@ -10,6 +11,7 @@ def version():
   if OTA.fetch():
     print("Nova versão disponível")
     machine.reset()
+  gc.collect()
   return True
 
 
@@ -19,10 +21,10 @@ while(True):
 
   led.on()
   print('Led OFF')
-  time.sleep_ms(2000)
+  time.sleep_ms(1000)
 
   led.off()
   print('Led ON')
-  time.sleep_ms(2000)
+  time.sleep_ms(1000)
 
   version()
