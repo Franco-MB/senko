@@ -1,3 +1,13 @@
-"""Your main code goes here!"""
+from machine import Pin
+import time
 
-print("1")
+led = Pin(2, Pin.OUT)
+
+while(True):
+  led.on()
+  print('Led OFF')
+  time.sleep_ms(500)
+
+  led.off()
+  print('Led ON')
+  time.sleep_ms(500)
