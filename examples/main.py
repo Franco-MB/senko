@@ -1,4 +1,4 @@
-from machine import Pin
+import machine
 import time
 import senko
 
@@ -12,7 +12,7 @@ def version():
     machine.reset()
 
 
-led = Pin(2, Pin.OUT)
+led = machine.Pin(2, Pin.OUT)
 
 while(True):
 
@@ -25,4 +25,3 @@ while(True):
   time.sleep_ms(100)
 
   version()
-
