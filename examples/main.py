@@ -1,4 +1,4 @@
-import machine
+from machine import Pin
 import time
 import senko
 
@@ -10,18 +10,19 @@ def version():
   if OTA.fetch():
     print("Nova versão disponível")
     machine.reset()
+  return True
 
 
-led = machine.Pin(2, Pin.OUT)
+led = Pin(2, Pin.OUT)
 
 while(True):
 
   led.on()
   print('Led OFF')
-  time.sleep_ms(1000)
+  time.sleep_ms(100)
 
   led.off()
   print('Led ON')
-  time.sleep_ms(1000)
+  time.sleep_ms(100)
 
   version()
